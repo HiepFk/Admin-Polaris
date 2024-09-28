@@ -4,8 +4,10 @@ import { CalendarIcon } from "@shopify/polaris-icons";
 import BarChart from "../components/Dashboard/BarChart";
 import LineChart from "../components/Dashboard/LineChart";
 import DateRange from "../components/Dashboard/DatePicker";
+import useTitle from "../hook/useTitle";
 
 function Dashboard() {
+  useTitle("Dashboard");
   return (
     <Page title="Dashboard" fullWidth>
       <DateRange />
